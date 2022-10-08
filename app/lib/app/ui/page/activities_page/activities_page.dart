@@ -9,95 +9,9 @@ import 'package:app/app/extension/datetime_extension.dart';
 class ActivitiesPage extends GetCommonView<ActivitiesController> {
   ActivitiesPage({super.key});
 
-  late final List<ActivityModel> data = [
-    ActivityModel(
-      date: DateTime.now(),
-      type: ActivityType.receive,
-      address: '0x755555555CbEF',
-      count: 42,
-      currency: 'ETF',
-    ),
-    ActivityModel(
-      date: DateTime.now(),
-      type: ActivityType.send,
-      address: '0x755555555CbEF',
-      count: 58,
-      currency: 'ETF',
-    ),
-    ActivityModel(
-      date: DateTime.now(),
-      type: ActivityType.receive,
-      address: '0x755555555CbEF',
-      count: 82,
-      currency: 'ETF',
-    ),
-    ActivityModel(
-      date: DateTime.now().calendarBack(1),
-      type: ActivityType.receive,
-      address: '0x755555555CbEF',
-      count: 42,
-      currency: 'ETF',
-    ),
-    ActivityModel(
-      date: DateTime.now().calendarBack(1),
-      type: ActivityType.send,
-      address: '0x755555555CbEF',
-      count: 42,
-      currency: 'ETF',
-    ),
-    ActivityModel(
-      date: DateTime.now().calendarBack(1),
-      type: ActivityType.send,
-      address: '0x755555555CbEF',
-      count: 81,
-      currency: 'ETF',
-    ),
-    ActivityModel(
-      date: DateTime.now().calendarBack(2),
-      type: ActivityType.receive,
-      address: '0x755555555CbEF',
-      count: 12,
-      currency: 'ETF',
-    ),
-    ActivityModel(
-      date: DateTime.now().calendarBack(2),
-      type: ActivityType.send,
-      address: '0x755555555CbEF',
-      count: 32,
-      currency: 'ETF',
-    ),
-    ActivityModel(
-      date: DateTime.now().calendarBack(2),
-      type: ActivityType.receive,
-      address: '0x755555555CbEF',
-      count: 99,
-      currency: 'ETF',
-    ),
-    ActivityModel(
-      date: DateTime.now().calendarBack(3),
-      type: ActivityType.receive,
-      address: '0x755555555CbEF',
-      count: 42,
-      currency: 'ETF',
-    ),
-    ActivityModel(
-      date: DateTime.now().calendarBack(3),
-      type: ActivityType.send,
-      address: '0x755555555CbEF',
-      count: 42,
-      currency: 'ETF',
-    ),
-    ActivityModel(
-      date: DateTime.now().calendarBack(3),
-      type: ActivityType.receive,
-      address: '0x755555555CbEF',
-      count: 42,
-      currency: 'ETF',
-    ),
-  ];
-
   @override
   Widget build(BuildContext context) {
+    late final List<ActivityModel> data = controller.datas;
     return Scaffold(
       resizeToAvoidBottomInset: false,
       body: SafeArea(

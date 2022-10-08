@@ -1,5 +1,5 @@
 PODS:
-  - agent_dart (0.0.1):
+  - agent_dart (1.0.0):
     - Flutter
   - Flutter (1.0.0)
   - GoogleDataTransport (9.2.0):
@@ -108,7 +108,7 @@ EXTERNAL SOURCES:
     :path: ".symlinks/plugins/shared_preferences_ios/ios"
 
 SPEC CHECKSUMS:
-  agent_dart: 802bad37233df867d8e7113ae941f682e04f4328
+  agent_dart: 60b2c0137d382ac8e72defc2a6d8907d94d92bd7
   Flutter: f04841e97a9d0b0a8025694d0796dd46242b2854
   GoogleDataTransport: 1c8145da7117bd68bbbed00cf304edb6a24de00f
   GoogleMLKit: 755661c46990a85e42278015f26400286d98ad95

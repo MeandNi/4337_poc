@@ -79,7 +79,7 @@ class LoginPage extends GetCommonView<LoginController> {
     Get.to(
       () => EmailPage(
         onConfirm: (c) async {
-          final email = c.emailController.text, code = c.verifyController.text;
+          final email = c.emailTEC.text, code = c.verifyTEC.text;
           if (!EmailValidator.validate(email)) {
             ToastUtil.show('Not a valid email address');
             return;
@@ -111,7 +111,7 @@ class LoginPage extends GetCommonView<LoginController> {
     Get.to(
       () => EmailPage(
         onConfirm: (c) async {
-          final email = c.emailController.text, code = c.verifyController.text;
+          final email = c.emailTEC.text, code = c.verifyTEC.text;
           if (!EmailValidator.validate(email)) {
             ToastUtil.show('Not a valid email address');
             return;

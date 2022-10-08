@@ -9,11 +9,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  agent_dart:
-    git:
-      url: 'https://github.com/AstroxNetwork/agent_dart'
-      ref: '1.0.1-dev'
-
+  agent_dart: ^1.0.0-dev.5
   json_rpc_2: ^3.0.2
   stream_transform: ^2.0.0
   eip55: ^1.0.2
