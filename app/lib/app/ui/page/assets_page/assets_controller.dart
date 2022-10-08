@@ -191,7 +191,7 @@ class AssetsController extends BaseGetController {
       if (item == null) {
         item = [];
       }
-      return storage?.setItem(Constant.KEY_ACTIVITIES, [model, ...item]);
+      return storage?.setItem(Constant.KEY_ACTIVITIES, [model.toJson(), ...item]);
     });
   }
 }
